@@ -1,6 +1,6 @@
-# 2D Points Value Palette Coloring
+# JavaScript 2D Points Value Palette Coloring
 
-![2D Points Value Palette Coloring](2dPointsValuePalette.png)
+![JavaScript 2D Points Value Palette Coloring](2dPointsValuePalette.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
