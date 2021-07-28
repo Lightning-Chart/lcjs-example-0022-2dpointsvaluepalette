@@ -63,10 +63,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.1/classes/chartxy.html
-[Solid line style]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.1/classes/solidline.html
-[Point shape options]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.1/enums/pointshape.html
-[Paletted fill style]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.1/classes/palettedfill.html
-[Color lookup table]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.1/classes/lut.html
-[Color factory RGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.1/globals.html#colorrgba
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/chartxy.html
+[Solid line style]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/solidline.html
+[Point shape options]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/enums/pointshape.html
+[Paletted fill style]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/palettedfill.html
+[Color lookup table]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/lut.html
+[Color factory RGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#colorrgba
 

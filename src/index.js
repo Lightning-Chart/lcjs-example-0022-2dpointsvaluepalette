@@ -7,7 +7,6 @@ const lcjs = require("@arction/lcjs");
 // Extract required parts from LightningChartJS.
 const {
   lightningChart,
-  SolidLine,
   PointShape,
   PalettedFill,
   LUT,
@@ -21,7 +20,7 @@ const { createProgressiveTraceGenerator } = require("@arction/xydata");
 // Create a XY Chart.
 const chart = lightningChart()
   .ChartXY({
-    // theme: Themes.dark
+    // theme: Themes.darkGold
   })
   .setTitle("2D points value palette coloring")
   .setPadding({ right: 20 });
@@ -81,5 +80,10 @@ createProgressiveTraceGenerator()
       .add(tracePoints)
       .setStrokeStyle((style) => style.setThickness(5));
 
-    chart.addLegendBox().add(chart);
+    chart.addLegendBox().add(chart)
+      // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
+      .setAutoDispose({
+          type: 'max-width',
+          maxWidth: 0.20,
+      })
   });
