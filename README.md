@@ -1,6 +1,6 @@
 # JavaScript 2D Points Value Palette Coloring
 
-![JavaScript 2D Points Value Palette Coloring](2dPointsValuePalette.png)
+![JavaScript 2D Points Value Palette Coloring](2dPointsValuePalette-darkGold.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -8,13 +8,13 @@ LightningChart JS is entirely GPU accelerated and performance optimized charting
 
 The demo can be used as an example or a seed project. Local execution requires the following steps:
 
-- Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed
-- Open the project folder in a terminal:
+-   Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed
+-   Open the project folder in a terminal:
 
-        npm install              # fetches dependencies
-        npm start                # builds an application and starts the development server
+          npm install              # fetches dependencies
+          npm start                # builds an application and starts the development server
 
-- The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
+-   The application is available at _http://localhost:8080_ in your browser, webpack-dev-server provides hot reload functionality.
 
 
 ## Description
@@ -46,27 +46,27 @@ In addition to this, dynamic coloring by `x` or `y` coordinate is also supported
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
-Official [API documentation][1] can be found on [Arction][2] website.
+Official [API documentation][1] can be found on [LightningChart][2] website.
 
 If the docs and other materials do not solve your problem as well as implementation help is needed, ask on [StackOverflow][3] (tagged lightningchart).
 
-If you think you found a bug in the LightningChart JavaScript library, please contact support@arction.com.
+If you think you found a bug in the LightningChart JavaScript library, please contact support@lightningchart.com.
 
-Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
+Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@lightningchart.com.
 
 [0]: https://github.com/Arction/
-[1]: https://www.arction.com/lightningchart-js-api-documentation/
-[2]: https://www.arction.com
+[1]: https://lightningchart.com/lightningchart-js-api-documentation/
+[2]: https://lightningchart.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
-[4]: https://www.arction.com/support-services/
+[4]: https://lightningchart.com/support-services/
 
-© Arction Ltd 2009-2020. All rights reserved.
+© LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/chartxy.html
-[Solid line style]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/solidline.html
-[Point shape options]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/enums/pointshape.html
-[Paletted fill style]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/palettedfill.html
-[Color lookup table]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/lut.html
-[Color factory RGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#colorrgba
+[XY cartesian chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/ChartXY.html
+[Solid line style]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/SolidLine.html
+[Point shape options]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/enums/PointShape.html
+[Paletted fill style]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/PalettedFill.html
+[Color lookup table]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/LUT.html
+[Color factory RGBA]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/functions/ColorRGBA.html
 
