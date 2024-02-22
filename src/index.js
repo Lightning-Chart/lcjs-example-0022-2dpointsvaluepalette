@@ -25,7 +25,8 @@ const palette = new PalettedFill({
     lut: new LUT({
         units: 'trace dist (y)',
         interpolate: true,
-        steps: regularColorSteps(0, 10, theme.examples.intensityColorPalette).map((step, i, steps) =>
+        percentageValues: true,
+        steps: regularColorSteps(0, 1, theme.examples.intensityColorPalette).map((step, i, steps) =>
             // Make last step transparent.
             i === steps.length - 1 ? { ...step, color: step.color.setA(0) } : step,
         ),
@@ -62,6 +63,7 @@ createProgressiveTraceGenerator()
                 }),
             ),
         )
+        console.log(outlierPoints)
         points.add(outlierPoints)
 
         const line = chart
