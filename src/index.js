@@ -13,7 +13,7 @@ const { createProgressiveTraceGenerator } = require('@arction/xydata')
 // Create a XY Chart.
 const chart = lightningChart()
     .ChartXY({
-        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined
+        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('2D points value palette coloring')
     .setPadding({ right: 20 })
