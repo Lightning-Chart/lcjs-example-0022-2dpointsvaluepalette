@@ -2,13 +2,13 @@
  * LightningChartJS example that showcases 2D points dynamic coloring based on an arbitrary user data set.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, PointShape, PalettedFill, LUT, regularColorSteps, Themes } = lcjs
 
 // Import data-generators from 'xydata'-library.
-const { createProgressiveTraceGenerator } = require('@arction/xydata')
+const { createProgressiveTraceGenerator } = require('@lightningchart/xydata')
 
 // Create a XY Chart.
 const chart = lightningChart({
@@ -19,6 +19,7 @@ const chart = lightningChart({
     })
     .setTitle('2D points value palette coloring')
     .setPadding({ right: 20 })
+    .setCursorMode('show-all-interpolated')
 
 const theme = chart.getTheme()
 
