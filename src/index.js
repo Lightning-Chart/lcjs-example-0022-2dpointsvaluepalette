@@ -5,7 +5,7 @@
 const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, PointShape, PalettedFill, LUT, regularColorSteps, Themes } = lcjs
+const { lightningChart, emptyLine, PalettedFill, LUT, regularColorSteps, emptyFill, Themes } = lcjs
 
 // Import data-generators from 'xydata'-library.
 const { createProgressiveTraceGenerator } = require('@lightningchart/xydata')
@@ -18,7 +18,6 @@ const chart = lightningChart({
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('2D points value palette coloring')
-    .setPadding({ right: 20 })
     .setCursorMode('show-all-interpolated')
 
 const theme = chart.getTheme()
@@ -42,14 +41,14 @@ createProgressiveTraceGenerator()
     .toPromise()
     .then((tracePoints) => {
         const points = chart
-            .addPointSeries({
-                pointShape: PointShape.Circle,
+            .addPointLineAreaSeries({
+                dataPattern: null,
+                lookupValues: true,
             })
             .setName('Outliers')
             .setPointSize(3.0)
             .setPointFillStyle(palette)
-            // IMPORTANT: Individual point values must be explicitly enabled for dynamic coloring.
-            .setIndividualPointValueEnabled(true)
+            .setStrokeStyle(emptyLine)
 
         // Generate points for outlier series.
         const outlierPoints = []
@@ -66,18 +65,16 @@ createProgressiveTraceGenerator()
                 }),
             ),
         )
-        console.log(outlierPoints)
-        points.add(outlierPoints)
+        points.appendJSON(outlierPoints, { x: 'x', y: 'y', lookupValue: 'value' })
 
         const line = chart
-            .addLineSeries({
-                dataPattern: {
-                    pattern: 'ProgressiveX',
-                },
+            .addPointLineAreaSeries({
+                dataPattern: 'ProgressiveX',
             })
             .setName('Trace stroke')
-            .add(tracePoints)
+            .appendJSON(tracePoints)
             .setStrokeStyle((style) => style.setThickness(5))
+            .setAreaFillStyle(emptyFill)
 
         chart
             .addLegendBox()
