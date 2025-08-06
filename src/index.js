@@ -40,15 +40,17 @@ createProgressiveTraceGenerator()
     .generate()
     .toPromise()
     .then((tracePoints) => {
+        const line = chart
+            .addLineSeries({})
+            .setName('Trace stroke')
+            .appendJSON(tracePoints)
+            .setStrokeStyle((style) => style.setThickness(5))
         const points = chart
-            .addPointLineAreaSeries({
-                dataPattern: null,
-                lookupValues: true,
-            })
+            .addPointSeries()
             .setName('Outliers')
             .setPointSize(3.0)
             .setPointFillStyle(palette)
-            .setStrokeStyle(emptyLine)
+            .setPointStrokeStyle(emptyLine)
 
         // Generate points for outlier series.
         const outlierPoints = []
@@ -65,23 +67,5 @@ createProgressiveTraceGenerator()
                 }),
             ),
         )
-        points.appendJSON(outlierPoints, { x: 'x', y: 'y', lookupValue: 'value' })
-
-        const line = chart
-            .addPointLineAreaSeries({
-                dataPattern: 'ProgressiveX',
-            })
-            .setName('Trace stroke')
-            .appendJSON(tracePoints)
-            .setStrokeStyle((style) => style.setThickness(5))
-            .setAreaFillStyle(emptyFill)
-
-        chart
-            .addLegendBox()
-            .add(chart)
-            // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
-            .setAutoDispose({
-                type: 'max-width',
-                maxWidth: 0.2,
-            })
+        points.appendJSON(outlierPoints)
     })
