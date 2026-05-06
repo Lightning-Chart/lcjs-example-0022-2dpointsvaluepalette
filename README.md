@@ -63,10 +63,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2026. All rights reserved.
 
 
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/classes/ChartXY.html
-[Solid line style]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/classes/SolidLine.html
-[Point shape options]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/enums/PointShape.html
-[Paletted fill style]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/classes/PalettedFill.html
-[Color lookup table]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/classes/LUT.html
-[Color factory RGBA]: https://lightningchart.com/js-charts/api-documentation/v8.2.0/functions/ColorRGBA.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/ChartXY.html
+[Solid line style]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/SolidLine.html
+[Point shape options]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/enums/PointShape.html
+[Paletted fill style]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/PalettedFill.html
+[Color lookup table]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/LUT.html
+[Color factory RGBA]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/functions/ColorRGBA.html
 
